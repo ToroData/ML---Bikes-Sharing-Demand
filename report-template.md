@@ -12,15 +12,15 @@ The best executed model has been WeightedEnsemble_L3, which is an ensemble-based
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Add your explanation
+I have seen that the variables temp and atemp are highly correlated. Similarly, the variables registered and count are highly correlated. The variables casual-count, casual-registered, atemp/temp-count/casual, and humidity-weather are also quite correlated. However, the variables count, registered, casual, windspeed have very low correlation with humidity. The distributions of registered, casual, windspeed, and count are left-skewed. Temp and atemp have approximately normal distributions. The samples of season are balanced, but not the samples of holiday and workingday.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Add your explanation
+It improved from 1.79047 to 0.67905. I think in this case it helped to have more information available that could be translated into knowledge through the chosen models.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
+It improved even further, going from 0.67905 to 0.46763.
 
-I have seen that the variables temp and atemp are highly correlated. Similarly, the variables registered and count are highly correlated. The variables casual-count, casual-registered, atemp/temp-count/casual, and humidity-weather are also quite correlated. However, the variables count, registered, casual, windspeed have very low correlation with humidity. The distributions of registered, casual, windspeed, and count are left-skewed. Temp and atemp have approximately normal distributions. The samples of season are balanced, but not the samples of holiday and workingday.
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 I would have invested more time in cleaning and preprocessing tasks. In hindsight, I have thought about several possible new features. Additionally, personally, I would have performed PCA to eliminate features that are not contributing to the model and would have standardized them. I might have required some axis rotation to better validate the data. On the other hand, I would have looked at which variables have contributed the most and the least from an initial model. Perhaps by removing some of them, the model's quality would improve.
