@@ -117,3 +117,8 @@ hyperparameter_stack_lvl = 'num_stack_levels=2'
 ## Summary
 
 In this report, I present my experience working with the bike rental dataset and AutoGluon to predict bike demand. When attempting to submit my predictions, I realized that I needed to change the output format of the predictor to match the format required by the Kaggle competition. The best-performing model was WeightedEnsemble_L3, which is an ensemble-based model. To improve the model's performance, I conducted exploratory data analysis and created new features such as the hour category, temperature category, and humidity category. I also performed hyperparameter optimization to improve the model's performance. If I had more time with this dataset, I would have invested more time in cleaning and preprocessing tasks and would have performed PCA to eliminate features that do not contribute to the model and standardize them. I would have also examined which variables have contributed most and least to an initial model to eliminate some of them and improve the model's quality. In summary, I took a series of steps to improve the model's performance and achieve a score of 0.46763 in the Kaggle competition.
+
+
+## Reference:
+
+AutoGluon. (n.d.). AutoGluon: AutoML Toolkit for Deep Learning. Retrieved April 9, 2023, from https://auto.gluon.ai/stable/index.html
